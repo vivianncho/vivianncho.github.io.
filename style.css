@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header::after {
+  content: " ";
+  display: table;
+  clear:both;
+  
+}
+
+.logo{
+  float: left;
+  padding:10px 0;
+  
+}
+
+nav ul{
+  margin:0;
+  padding:30px 0;
+  list-style:none;
+}
+nav li{
+  border: 300px solid navy
+  letter-spacing: 15px;
+  display: inline;
+
+  position: relative;
+  
+}
+
+nav li a {
+  text-decoration: none;
+  color: navy;
+  font-size: 1em;
+  padding:1em;
+  padding-top: 50px;
+}
+
+nav a{
+  color: navy;
+  text-decoration:none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color:white;
+  
+}
+nav ul li{
+  background-color: lightblue;
+  opacity: .5;
+  text-align:center;
+  
+}
+
+nav ul li a:hover{
+  background-color: navy;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    color: whitesmoke;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container{
+    max-width: 960px;
+    margin: auto;
+    padding: 0 30px;
+  
+}
+
+#showcase{
+    height: 300px;
+}
+
+#showcase h1{
+    font-size: 50px;
+    line-height: 1.3;
+    position: relative;
+    animation: heading;
+    animation-duration: 1500ms;
+    animation-fill-mode: forwards;
+  -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: navy;
+}
+
+@keyframes heading{
+    0%{top: -50px;}
+    100%{top: 200px;}
+}
+
+#content{
+    position: relative;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  font-size: 50 px;
+}
+
+@keyframes content{
+    0%{left: -1000px;}
+    100%{left: 0;}
+}
+
+.btn{
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: #ffffff 1px solid;
+    margin-top: 40px;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 2500ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+
+    background-color: black;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.btn:hover{
+    transform: rotateY(180deg);
+}
+
+@keyframes btn{
+    0%{opacity: 0;}
+    100%{opacity: 1; pointer-events: all;}
+}
+
+.imageText{
+    display: inline-block;
+    background-color: #13141fad;
+    border-radius: 15px;
+    margin:40px;
+    
+    opacity: 0;
+
+    animation-name: btn;
+    animation-duration: 3500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes backgroundAnimation{
+    0%{opacity: 0;}
+    100%{opacity: 1; }
+  0%{background-position: left center;}
+	50%{background-position: right center;}
+	100%{background-position: left center;}
+
+}
+
+#start{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("assets/fish.jpg");
+    background-size: fill;
+    animation: backgroundAnimation 15s ease;
+}
+
+
+
+}
+
+.container{
+  margine-top: 80px;
+  
+}
+
+#yt{
+  text-align:center;
+  color:navy;
+}
+
+.owl-carousel{
+  top:40 px;
+
+}
+
+.owl-carousel .item-video{
+  height:300px;
+}
+
+.owl-dots{
+  text-align: center;
+  margine-top:20px;
+  
+}
+
+.owl-dot{
+  display: inline-block;
+  
+}
+
+.owl-dot span{
+  width:11px;
+  height:11px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  margin:5px 3px;
+}
+
+.owl-dot.active span{
+  background-color:#000;
+  
+}
+
+@media screen and (max-width:850px){
+  .flex-container{
+    flex-wrap:wrap;
+  }
+}
+
+
+
+#backToTop{
+    position: fixed;
+    float: right;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    color: white;
+    bottom: 15px;
+    right: 15px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+#backToTop:hover{
+    box-shadow: 0 0 .5rem ghostwhite;
+    transform: scale(1.25, 1.25);
+}
+
+#backToTopOne{
+    position: fixed;
+    float: right;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    color: white;
+    bottom: 15px;
+    right: 15px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+#backToTopOne:hover{
+    box-shadow: 0 0 .5rem ghostwhite;
+    transform: scale(1.5, 1.5);
+}
+#backToTopTwo{
+    position: fixed;
+    float: right;
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    color: white;
+    bottom: 15px;
+    right: 15px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+#backToTopTwo:hover{
+    box-shadow: 0 0 .5rem ghostwhite;
+    transform: scale(1.5, 1.5);
+}
+
+#learnMore{
+  background-color:navy;
+}
+#donate{
+  background-color:cadetblue;
+}
+.help a{
+color: black;
+}
+
+
+#myVideoOne {
+  position: absolute; no-repeat;
+left: 50%;
+z-index:-1000;
+min-width: 100%;
+min-height: 100%;
+width: 100%;
+height: 50%;
+transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+
+
+/* Add some content at the bottom of the video/page */
+#takeAction {
+  text-align:center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  padding: 15px;
+  color: white;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+  text-align: center;
+}
+
+/* Style the button used to pause/play the video */
+#myBtnedOne {
+  width: 200px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  position:absolute;
+transition: .5s ease;
+    left: 201px;
+    bottom: 150px;
+  border-radius: 10px;
+    border: 1px solid white;
+}
+
+#myBtnedOne:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+#ta{
+  color:navy;
+  margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+  background-color: white;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+opacity: .7;
+  border: 3px solid cadetblue;
+  box-shadow: 7px 7px;
+}
+
+#help{
+  color: white;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+  text-align: center;
+
+}
+
+#list{
+  color: navy;
+   margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+  background-color: white;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+  opacity: .7;
+  border: 3px solid cadetblue;
+  box-shadow: 7px 7px;
+}
+
+#infoLink{
+   margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+  background-color: white;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+   opacity: .7;
+  border: 3px solid navy;
+  box-shadow: 7px 7px;
+}
+#donateOne{
+  color: white;
+  padding:30px;
+  text-align: center;
+  background-color: cadetblue;
+   opacity: .7;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+}
+#coral{
+  box-shadow: 7px 7px;
+  border-radius: 5px;
+  text-align: left;
+}
+#turtle{
+  box-shadow: 7px 7px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#otter{
+  box-shadow: 7px 7px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+
+#myVideo {
+  position: absolute; no-repeat;
+left: 50%;
+z-index:-1000;
+min-width: 100%;
+min-height: 100%;
+width: 100%;
+height: 50%;
+transform: translate(-50%, -50%);
+  text-align:center;
+}
+
+
+
+/* Add some content at the bottom of the video/page */
+#about {
+  text-align:center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 70%;
+  padding: 15px;
+  color: white;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+  text-align: center;
+}
+
+/* Style the button used to pause/play the video */
+#myBtned {
+  width: 200px;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  position:absolute;
+transition: .5s ease;
+    left: 201px;
+    bottom: 150px;
+  border-radius: 10px;
+    border: 1px solid white;
+}
+
+#myBtned:hover {
+  background: #ddd;
+  color: black;
+}
+
+#me{
+color:navy;
+  margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+  background-color: white;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+opacity: .7;
+  border: 3px solid cadetblue;
+  box-shadow: 7px 7px;  
+}
+
+#motivations{
+  color: white;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+  text-align: center;
+}
+
+#motivationInfo{
+  color:navy;
+  margin-left: auto;
+    margin-right: auto;
+    width: 70em;
+  background-color: white;
+  padding:15px;
+  border-radius: 10px;
+  text-align: center;
+opacity: .7;
+  border: 3px solid cadetblue;
+  box-shadow: 7px 7px;  
+}
+
+#aboutMe{
+  color: white;
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: navy;
+  text-align: center;
+}
